@@ -1,3 +1,259 @@
+/* Notes Page Styles */
+.notes-container {
+  max-width: 540px;
+  margin: 48px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  padding: 36px 28px 28px 28px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.notes-header {
+  display: flex;
+  color: #0a0a0a;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.logout-btn {
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 9px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(255,77,79,0.08);
+}
+.logout-btn:hover {
+  background: #d9363e;
+}
+.input-section {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.note-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1.5px solid #d9d9d9;
+  border-radius: 7px;
+  font-size: 17px;
+  background: #f6f8fa;
+  color: #222;
+  transition: border 0.2s;
+}
+.note-input:focus {
+  border: 1.5px solid #1677ff;
+  outline: none;
+}
+.add-btn {
+  background: #1677ff;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 22px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(22,119,255,0.08);
+}
+.add-btn:disabled {
+  background: #b6d4fe;
+  cursor: not-allowed;
+}
+.add-btn:hover:not(:disabled) {
+  background: #0958d9;
+}
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.note-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f6f8fa;
+  border-radius: 9px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s;
+}
+.note-item:hover {
+  box-shadow: 0 4px 16px rgba(22,119,255,0.08);
+}
+.note-text {
+  font-size: 17px;
+  color: #222;
+  word-break: break-word;
+  max-width: 320px;
+}
+.note-actions {
+  display: flex;
+  gap: 10px;
+}
+.edit-btn, .delete-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 7px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.edit-btn {
+  background: #ffec3d;
+  color: #222;
+}
+.edit-btn:hover {
+  background: #ffe066;
+}
+.delete-btn {
+  background: #ffa39e;
+  color: #fff;
+}
+.delete-btn:hover {
+  background: #ff7875;
+}
+.empty-notes {
+  text-align: center;
+  color: #b0b0b0;
+  font-size: 1.1rem;
+  padding: 32px 0 12px 0;
+}
+/* Auth (Login/Signup) Page Styles */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0e7ff 0%, #fff 100%);
+}
+.auth-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  padding: 40px 32px 32px 32px;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+}
+.auth-title {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  color: #1e293b;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.auth-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #f6f8fa;
+  color: #171717;
+  transition: border 0.2s;
+}
+.auth-input:focus {
+  border: 1.5px solid #1677ff;
+  outline: none;
+}
+.auth-btn {
+  width: 100%;
+  background: #1677ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background 0.2s;
+}
+.auth-btn:hover {
+  background: #0958d9;
+}
+.auth-link {
+  color: #64748b;
+  font-size: 0.98rem;
+}
+.auth-link a {
+  color: #1677ff;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-left: 4px;
+}
+.auth-link a:hover {
+  color: #0958d9;
+}
+/* Landing Page Styles */
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0e7ff 0%, #fff 100%);
+}
+.landing-content {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  padding: 48px 36px 40px 36px;
+  text-align: center;
+  max-width: 400px;
+}
+.landing-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #1e293b;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.subtitle {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+.landing-actions {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+.primary-btn {
+  background: #1677ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.primary-btn:hover {
+  background: #0958d9;
+}
+.secondary-btn {
+  background: #fff;
+  color: #1677ff;
+  border: 2px solid #1677ff;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.secondary-btn:hover {
+  background: #e6f0ff;
+  color: #0958d9;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
